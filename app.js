@@ -9,7 +9,7 @@ mongoose.connection.on("error", function (e) { console.error(e); });
 
 var schema = mongoose.Schema({
     date: String,
-    name: { type: String, default: "Anonimo" }
+    name: { type: String, default: "Anónimo" }
 });
 
 var Visitor = mongoose.model("Visitor", schema);
